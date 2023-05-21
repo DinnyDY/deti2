@@ -1,0 +1,181 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Space Grotesk";
+  font-style: normal;
+  color: #070303;
+  background-color: #f5f3ef;
+}
+
+h1 {
+  font-size: 5.5rem;
+  font-weight: 800;
+  line-height: 80px;
+}
+
+h2 {
+  font-size: 3.5rem;
+  font-weight: 800;
+  line-height: 60px;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: #070303;
+}
+
+header {
+  padding: 5px 40px;
+}
+
+.end {
+  justify-content: end;
+}
+
+.flex {
+  display: flex;
+}
+
+.logo {
+  position: absolute;
+  top: 40px;
+  left: 40px;
+}
+
+.nav-item {
+  margin-right: 25px;
+}
+
+.soc .nav-item {
+  margin-right: 15px;
+}
+
+.topbar {
+  align-items: center;
+}
+
+.space {
+  border-right: 1px solid #070303;
+  margin-right: 15px;
+}
+
+ul .nav-item {
+  font-size: 0.75rem;
+  font-weight: 501;
+}
+ul .nav-item:hover {
+  border-bottom: 1px solid #070303;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  height: auto;
+  width: auto;
+  padding: auto;
+}
+
+.language {
+  position: relative;
+  padding: 0px;
+}
+
+.language:hover > .dropdown-lang {
+  display: initial;
+}
+
+.dropdown-lang {
+  display: none;
+  position: absolute;
+  left: 0px;
+  background-color: #f5f3ef;
+  padding: 0px 5px;
+  justify-content: center;
+}
+.dropdown-lang li {
+  margin: 8px 0px;
+}
+
+.btn-menu {
+  z-index: 3;
+  border-radius: 50px;
+  background-color: #070303;
+  width: 45px;
+  height: 45px;
+  display: none;
+  position: absolute;
+  right: 40px;
+}
+.btn-menu span::before,
+.btn-menu span::after {
+  position: absolute;
+  background-color: #fff;
+  height: 2px;
+  width: 24px;
+  top: 50%;
+  left: 50%;
+  margin-left: -12px;
+  transition: 0, 5s;
+}
+.btn-menu span::before,
+.btn-menu span::after {
+  content: "";
+}
+.btn-menu span::before {
+  transform: translateY(-5px);
+}
+.btn-menu span::after {
+  transform: translateY(5px);
+}
+
+.btn-menu-active span::before {
+  transform: rotate(40deg);
+}
+.btn-menu-active span::after {
+  transform: rotate(-40deg);
+}
+
+.botbar li {
+  padding-top: 10px;
+}
+.botbar .nav-item {
+  font-size: 1rem;
+}
+
+.btn-regular {
+  text-transform: uppercase;
+  border-radius: 60px;
+  border: 2px #070303 solid;
+  padding: 10px 12px;
+  font-weight: 800;
+}
+
+.black {
+  background-color: #070303;
+  color: #fff;
+}
+
+.white {
+  background-color: transparent;
+}
+
+@media screen and (max-width: 1200px) {
+  .btn-menu {
+    display: block;
+  }
+  .botbar {
+    display: none;
+  }
+}
+@media screen and (max-width: 994px) {
+  .topbar {
+    display: none;
+  }
+  .btn-menu {
+    margin-top: 40px;
+  }
+}/*# sourceMappingURL=main.css.map */
