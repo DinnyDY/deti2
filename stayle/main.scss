@@ -168,7 +168,7 @@ button{
     background-color: $black;
     width: 45px;
     height: 45px;
-    display: block;
+    display: none;
     position: absolute;
     right: 40px;
 
@@ -253,38 +253,35 @@ button{
 
  @media screen  and (max-width:1200px){
 
-    .botbar{
-        position: absolute;
-        right: 200px;
-    }
+    // .botbar{
+    //     position: absolute;
+    //     right: -500px;
+    //     transition: 0.5s;
+    //     justify-content: start;
+    //     display: flex;
+    //     width: auto;
+    //     height: 100vh;
+    //     background-color: $color;
+    //     z-index: 1;
+    //     ul{
+    //         display: block;
+    //         margin-top: 100px;
+    //         justify-content: center;
+    //         li{
+    //             margin-bottom: 20px;
+    //         }
+    //     }
+        
+    // }
 
 
     .btn-menu{
         display: block;
     }
-    .botbar{
-        display: none;
-    }
+    
 
-    .active{
-        position: absolute;
+    .active{     
         right: 0px;
-        justify-content: start;
-        display: flex;
-        width: auto;
-        height: 100vh;
-        background-color: $color;
-        z-index: 1;
-        transition: 0.5s;
-        ul{       
-            margin-top: 100px;
-            justify-content: center;
-            display: block;
-          
-            li{
-                margin-bottom: 20px;
-            }
-        }
     }
 
 
@@ -292,14 +289,52 @@ button{
  }
 
 @media screen  and (max-width:994px){
-    .topbar{
-        display: none;
+
+.navbar{
+    // right: -500px;
+    height: 100vh;
+    right: 0;
+    display: block;
+    position: absolute;
+    max-width: 35%;
+    z-index: 1;
+    justify-content: end;
+     .topbar{
+        display: block;
+        
+        z-index: 1;
+        justify-content: start;
+        width: auto;
+        .soc{
+            display: flex;
+
+        }
+
+         .space{
+            border: none;
+        }
+
+        
+
     }    
-    .active{
-        ul{
-            margin-top: 120px;
+    ul{ 
+        
+        display: block;
+        margin-top: 100px;
+        justify-content: center;
+        margin-top: 120px;
+        li{
+            margin-bottom: 20px;
         }
     }
+      
+    .botbar{
+        display: block;
+        justify-content: start;
+    }
+    }
+
+   
 
     .btn-menu{
         margin-top: 40px;
@@ -307,12 +342,32 @@ button{
     .end{
         justify-content: initial;
     }
+
  }
 
+
+
+
+
+
+
+
+    
+
+
+ 
 
  @media screen  and (max-width:420px){
 .active{
     width: 100%;
     justify-content: center;
+    background-color: $black;
+    
+    a{
+        color: $color;
+    }
 }
+
+
+
  }
