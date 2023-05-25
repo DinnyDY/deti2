@@ -89,6 +89,7 @@ button {
 }
 
 .dropdown-lang {
+  z-index: 4;
   display: none;
   position: absolute;
   left: 0px;
@@ -106,7 +107,7 @@ button {
   background-color: #070303;
   width: 45px;
   height: 45px;
-  display: none;
+  display: block;
   position: absolute;
   right: 40px;
 }
@@ -132,10 +133,10 @@ button {
   transform: translateY(5px);
 }
 
-.btn-menu-active span::before {
+.menu-active span::before {
   transform: rotate(40deg);
 }
-.btn-menu-active span::after {
+.menu-active span::after {
   transform: rotate(-40deg);
 }
 
@@ -164,18 +165,53 @@ button {
 }
 
 @media screen and (max-width: 1200px) {
+  .botbar {
+    position: absolute;
+    right: 200px;
+  }
   .btn-menu {
     display: block;
   }
   .botbar {
     display: none;
   }
+  .active {
+    position: absolute;
+    right: 0px;
+    justify-content: start;
+    display: flex;
+    width: auto;
+    height: 100vh;
+    background-color: #f5f3ef;
+    z-index: 1;
+    transition: 0.5s;
+  }
+  .active ul {
+    margin-top: 100px;
+    justify-content: center;
+    display: block;
+  }
+  .active ul li {
+    margin-bottom: 20px;
+  }
 }
 @media screen and (max-width: 994px) {
   .topbar {
     display: none;
   }
+  .active ul {
+    margin-top: 120px;
+  }
   .btn-menu {
     margin-top: 40px;
+  }
+  .end {
+    justify-content: initial;
+  }
+}
+@media screen and (max-width: 420px) {
+  .active {
+    width: 100%;
+    justify-content: center;
   }
 }/*# sourceMappingURL=main.css.map */
