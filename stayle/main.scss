@@ -1,5 +1,4 @@
-
-
+@import url(/deti2/stayle/componets/header.css);
 
 
 
@@ -31,6 +30,7 @@ body{
     font-style: normal;
     color: $black;
     background-color: $color;
+    overflow: hidden;
 }
 
 
@@ -61,15 +61,13 @@ a{
            
 header{
     padding: 5px 40px;
+    
 }
 
 .end{
     justify-content: end;
 }
 
-.flex{
-    display: flex;
-}
 
 
                                     //header
@@ -92,33 +90,11 @@ header{
 
 
 .soc{
+    
+    display: flex;
+    align-items: center;
     .nav-item{
         margin-right: 15px;
-    }
-}
-
-
-.topbar{
-    align-items: center;
-    
-
-   
-
-}
-
-.space{
-    border-right: 1px solid $black;
-    margin-right: 15px;
-
-}
-ul{
-    .nav-item{
-        font-size: $fz-5;
-        font-weight: 501;
-    }
-        .nav-item:hover{
-            border-bottom: 1px solid $black;
-        
     }
 }
 
@@ -137,6 +113,8 @@ button{
 .language{
     position: relative;
     padding: 0px;
+    height:18px;
+    margin: auto 0px;
 }
 
 
@@ -145,7 +123,7 @@ button{
 }
 
 .dropdown-lang{
-    z-index: 4;
+    z-index: 2;
     display: none;
     position: absolute;
     left: 0px;
@@ -162,42 +140,9 @@ button{
 
                                 // button menu media open close
 
-.btn-menu{
-    z-index: 3;
-    border-radius: 50px;
-    background-color: $black;
-    width: 45px;
-    height: 45px;
-    display: none;
-    position: absolute;
-    right: 40px;
 
-    
-    span::before,
-    span::after{
-        position: absolute;
-        background-color: #fff;
-        height: 2px;
-        width: 24px;
-        top: 50%;
-        left: 50%;
-        margin-left:-12px;
-        transition: 0,5s;
-    }
-    span::before,
-    span::after{
-        content: "";
-    }
-    span::before{
-        
-        transform: translateY(-5px);
-    }
-    span::after{
-        transform: translateY(5px);
-    }
-    
 
-}
+
 .menu-active {
     span::before{
         
@@ -211,21 +156,9 @@ button{
 
 
 
-                                // bottom bar menu
+                                // button regular
 
-    .botbar{
-        li{
-            
-            padding-top: 10px;
-        }
-        .nav-item{
-            
-            font-size: $fz-4;
-        }
     
-    }
-
-
 
 
 
@@ -242,132 +175,40 @@ button{
         color: #fff;
     }
     .white{
-        background-color: transparent;
+        background-color: $color;
+        color: $black;
     }
+
+
+    
 
                                 // media? screen
 
 
-
+                                
 
 
  @media screen  and (max-width:1200px){
-
-    // .botbar{
-    //     position: absolute;
-    //     right: -500px;
-    //     transition: 0.5s;
-    //     justify-content: start;
-    //     display: flex;
-    //     width: auto;
-    //     height: 100vh;
-    //     background-color: $color;
-    //     z-index: 1;
-    //     ul{
-    //         display: block;
-    //         margin-top: 100px;
-    //         justify-content: center;
-    //         li{
-    //             margin-bottom: 20px;
-    //         }
-    //     }
-        
-    // }
-
-
-    .btn-menu{
-        display: block;
-    }
-    
-
-    .active{     
-        right: 0px;
-    }
-
 
 
  }
 
 @media screen  and (max-width:994px){
-
-.navbar{
-    // right: -500px;
-    height: 100vh;
-    right: 0;
-    display: block;
-    position: absolute;
-    max-width: 35%;
-    z-index: 1;
-    justify-content: end;
-     .topbar{
-        display: block;
-        
-        z-index: 1;
-        justify-content: start;
-        width: auto;
-        .soc{
-            display: flex;
-
-        }
-
-         .space{
-            border: none;
-        }
-
-        
-
-    }    
-    ul{ 
-        
-        display: block;
-        margin-top: 100px;
-        justify-content: center;
-        margin-top: 120px;
-        li{
-            margin-bottom: 20px;
-        }
-    }
-      
-    .botbar{
-        display: block;
-        justify-content: start;
-    }
-    }
-
-   
-
-    .btn-menu{
-        margin-top: 40px;
-    }
-    .end{
-        justify-content: initial;
-    }
-
- }
-
-
-
-
-
-
-
+  
 
     
+ }
 
 
  
 
  @media screen  and (max-width:420px){
-.active{
-    width: 100%;
-    justify-content: center;
-    background-color: $black;
     
-    a{
-        color: $color;
+
+
+    header{
+        padding: 0px;
     }
-}
 
-
-
+    
  }
