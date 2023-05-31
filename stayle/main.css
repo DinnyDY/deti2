@@ -6,7 +6,6 @@ body {
   font-style: normal;
   color: #070303;
   background-color: #f5f3ef;
-  overflow: hidden;
 }
 
 h1 {
@@ -28,10 +27,6 @@ li {
 a {
   text-decoration: none;
   color: #070303;
-}
-
-header {
-  padding: 5px 40px;
 }
 
 .end {

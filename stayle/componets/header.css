@@ -5,6 +5,11 @@
   z-index: 1;
 }
 
+header {
+  padding: 5px 40px;
+  overflow: hidden;
+}
+
 ul {
   display: flex;
 }
@@ -35,14 +40,6 @@ ul .nav-item:hover {
 .space {
   border-right: 1px solid #070303;
   margin-right: 15px;
-}
-
-.btn-menu {
-  margin-top: 40px;
-}
-
-.max {
-  display: none;
 }
 
 .mini {
@@ -88,11 +85,59 @@ ul .nav-item:hover {
   display: none;
 }
 
+.container {
+  width: calc(100% - 300px);
+  margin: auto;
+  padding-top: 40px;
+  position: relative;
+  display: flex;
+}
+
+.info_block {
+  width: 55%;
+}
+.info_block .btn-regular {
+  padding: 20px 30px;
+}
+
+.hero-block {
+  position: relative;
+}
+
+.hero {
+  position: absolute;
+}
+
+.p {
+  display: none;
+}
+
+.y {
+  top: 20px;
+  left: 100px;
+}
+
+.b {
+  top: 20px;
+  left: 300px;
+}
+
+.r {
+  bottom: -60px;
+  left: -250px;
+}
+
+.g {
+  bottom: -40px;
+  left: 300px;
+}
+
 @media screen and (max-width: 1200px) {
   .botbar {
     padding-left: 20px;
     position: absolute;
     right: -500px;
+    height: 100vh;
     justify-content: start;
     display: flex;
     background-color: #f5f3ef;
@@ -147,6 +192,7 @@ ul .nav-item:hover {
     font-size: 13px;
   }
   .botbar {
+    height: auto;
     position: initial;
     background-color: transparent;
     padding: 0px;
@@ -158,6 +204,9 @@ ul .nav-item:hover {
   .active {
     right: 0;
   }
+  .max {
+    display: none;
+  }
 }
 @media screen and (max-width: 420px) {
   .botbar {
@@ -165,15 +214,16 @@ ul .nav-item:hover {
     justify-content: center;
   }
   .botbar ul {
-    padding-top: 0px;
+    margin-top: 0px;
   }
   .botbar ul li {
     text-align: center;
   }
   .navbar {
+    position: fixed;
     width: 100%;
     background-color: #070303;
-    padding-top: 25%;
+    padding: 25% 0px 0px 0px;
     justify-content: center;
     text-align: center;
   }
@@ -188,5 +238,8 @@ ul .nav-item:hover {
   }
   .icon {
     fill: #f5f3ef;
+  }
+  .soc {
+    justify-content: center;
   }
 }/*# sourceMappingURL=header.css.map */

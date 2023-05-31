@@ -29,7 +29,11 @@ $bolt: 800;
 
 
 
-
+header{
+    padding: 5px 40px;
+    overflow: hidden;
+    
+}
 
 
 
@@ -87,13 +91,7 @@ ul{
 
 
 
-.btn-menu{
-    margin-top: 40px;
-}
 
-.max{
-    display: none;
-    }
 
 .mini{
     display: block;
@@ -111,6 +109,7 @@ ul{
 
 
    .btn-menu{
+    
     z-index: 3;
     border-radius: 50px;
     background-color: $black;
@@ -153,12 +152,75 @@ ul{
    }
 
 
-   @media screen  and (max-width:1200px){
+   
+
+
+
+ .container{
+    width: calc(100% - 300px);
+    margin: auto;
+    padding-top:40px ;
+    position: relative;
+    display: flex;
+    
+}
+
+.info_block{
+    width: 55%;
+    .btn-regular{
+        padding: 20px 30px;
+    }
+}
+
+
+.hero-block{
+position: relative;
+}
+.hero{
+position: absolute;
+
+}
+
+
+.p{
+display: none;
+}
+
+.y{
+top: 20px;
+left: 100px;
+}
+
+.b{
+top: 20px;
+left: 300px;
+}
+
+.r{
+bottom: -60px;
+left: -250px;
+}
+.g{
+bottom: -40px;
+left: 300px;
+}
+
+
+
+
+
+
+
+
+
+
+@media screen  and (max-width:1200px){
 
     .botbar{
         padding-left: 20px;
         position: absolute;
         right: -500px;
+        height: 100vh;
         justify-content: start;
         display: flex;
         background-color: $color;
@@ -186,6 +248,12 @@ ul{
     
 
  }
+
+
+
+
+
+
 
  @media screen  and (max-width:994px){
     
@@ -216,7 +284,7 @@ ul{
     padding:0px 20px 0px 40px ;
     height: 100vh;
     right: -500px;
-    display: grid;
+    display:grid;
     position: absolute;
     z-index: 1;
     background-color: $color;
@@ -240,6 +308,7 @@ ul{
 
       
     .botbar{
+        height: auto;
         position:initial;
         background-color:transparent;
         padding: 0px;
@@ -251,17 +320,18 @@ ul{
    .active{
     right: 0;
    }
+
+
+   .max{
+    display: none;
+    }
+
+
     }
 
  
 
 
-
-
-
-
-
-    
  
 
  @media screen  and (max-width:420px){
@@ -270,7 +340,7 @@ ul{
     padding: auto;
     justify-content: center;
     ul{
-        padding-top: 0px;
+        margin-top: 0px;
         li{
         text-align: center;
         }
@@ -279,9 +349,10 @@ ul{
 
 
 .navbar{
+    position: fixed;
     width: 100%;
     background-color: $black;
-    padding-top: 25%;
+    padding: 25% 0px 0px 0px;
     justify-content: center;
     text-align: center;
 }
@@ -305,7 +376,9 @@ ul{
     }
 
     
-
+    .soc{
+            justify-content: center;
+    }
 }
 
    
